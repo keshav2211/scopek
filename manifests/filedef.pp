@@ -1,12 +1,16 @@
 define scopek::filedef (
-  $filepath=$::scopek::params::filepath
+  $filepath='UNSET'
   ) {
 
-if ! defined(Class['::scopek::params']) {
-    fail('please include scopek main or params class before declaring this defined resource')
+if $filepath == 'UNSET' {
+  include ::scopek::params
+  $def_filepath=$::scopek::params::filepath
+  }
+else  {
+  $def_filepath=$filepath
   }
 
-file { "${filepath}.${title}":
+file { "${def_filepath}.${title}":
   ensure => present,
   }
 }
