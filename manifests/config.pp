@@ -1,6 +1,6 @@
 class scopek::config {
  
-::scopek::filedef { 'fileinst' :}
+::scopek::filedef { 'os' :}
 }
   
   
