@@ -7,15 +7,11 @@ $providermsg = $osfamily ? {
 }
 
 if $::operatingsystem == 'Ubuntu' {
-
 $mysqlmsg = 'mysql config file for ubuntu is /etc/mysql/my.cnf'
-
 }
 
 elsif $::operatingsystem == 'CentOS' {
-
 $mysqlmsg = 'mysql config file for centos is /etc/my.cnf'
-
 }
 
 }
