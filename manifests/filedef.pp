@@ -5,3 +5,4 @@ define scopek::filedef (
 file { $filepath:
   ensure => present,
   }
+}
