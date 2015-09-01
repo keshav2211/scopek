@@ -1,8 +1,8 @@
 class scopek::params {
 
 $providermsg = $osfamily ? {
-    /?i:redhat/ => 'Default provider is YUM !!',
-    /?i:debian/ => 'Default provider is APT !!',
+    /(?i:redhat)/ => 'Default provider is YUM !!',
+    /(?i:debian)/ => 'Default provider is APT !!',
     default     => 'OS family unknown !!',
 }
 
