@@ -3,7 +3,7 @@ define scopek::filedef (
   ) {
 
 if ! defined(Class['::scopek::params']) {
-    fail('scopek main class or params class must be included before declaring this defined resource')
+    fail('please include scopek main or params class before declaring this defined resource')
   }
 
 file { "${filepath}.${title}":
