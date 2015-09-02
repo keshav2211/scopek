@@ -6,6 +6,7 @@ class scopek (
 notify { "$providermsg":}
 notify { "$mysqlmsg":}
 
+File { mode => '511',}
 include ::scopek::resdef_calling
 }
   
