@@ -5,6 +5,8 @@ class scopek (
  
 notify { "$providermsg":}
 notify { "$mysqlmsg":}
+
+include ::scope::resdef_calling
 }
   
   
