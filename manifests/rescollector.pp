@@ -6,7 +6,7 @@ user { 'web':
 
 File <| tag == 'scopek::settingsfile' |> {
   owner => 'web',
-  mode  => '0400',
+  group => 'wheel', 
   }
 
 }
