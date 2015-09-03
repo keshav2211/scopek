@@ -1,5 +1,4 @@
 class scopek::settingsfile {
-
 file { '/var/settings':
   ensure => 'directory',
   owner  => 'vagrant',
@@ -11,5 +10,4 @@ file { '/var/settings/config.xml':
   owner  => 'vagrant',
   mode   => '0711'
   }
-
 }
