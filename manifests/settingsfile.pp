@@ -7,7 +7,7 @@ file { '/var/settings':
   }
 
 file { '/var/settings/config.xml':
-  ensure => 'present',
+  ensure => 'file',
   owner  => 'vagrant',
   mode   => '0711'
   }
