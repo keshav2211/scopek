@@ -1,4 +1,5 @@
 class scopek::settingsfile {
+
 file { '/var/settings':
   ensure => 'directory',
   owner  => 'vagrant',
