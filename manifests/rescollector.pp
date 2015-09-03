@@ -4,8 +4,9 @@ user { 'web':
   ensure => present,
   }
 
-File <| title == '/var/settings/config.xml' |> {
+File <| tag == 'scopek::settingsfile' |> {
   owner => 'web',
+  mode  => '0400',
   }
 
 }
