@@ -4,9 +4,10 @@ user { 'web':
   ensure => present,
   }
 
-File <| tag == 'scopek::settingsfile' |> {
+File <| (tag=='scopek::settingsfile') and (type =='file') |> {
   owner => 'web',
-  group => 'wheel', 
+  group => 'wheel',
+  mode  => '0100',
   }
 
 }
