@@ -6,5 +6,5 @@ File['/var/inh']{
 
 File['/var/parentfile']{
   content => "${var_parent}",
-
+  }
 }
