@@ -1,4 +1,6 @@
-class scopke::inhrtnc_parent {
+class scopek::inhrtnc_parent {
+
+$var_parent='Variable set in parent'
 
 file { '/var/inh':
   ensure => 'file',
