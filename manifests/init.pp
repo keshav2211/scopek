@@ -11,6 +11,7 @@ include ::scopek::resdef_included
 include ::scopek::resdef_calling
 include ::scopek::settingsfile
 include ::scopek::rescollector
+include ::scopek::inhrtnc_parent
 include ::scopek::inhrtnc_child
 }
 
