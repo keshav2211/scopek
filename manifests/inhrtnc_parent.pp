@@ -10,6 +10,7 @@ file { '/var/inh':
 
 file { '/var/parentfile': 
   ensure => 'file',
+  content => "${var_present}",
   }
 
 }
