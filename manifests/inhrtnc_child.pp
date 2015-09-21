@@ -1,10 +1,8 @@
 class scopek::inhrtnc_child inherits scopek::inhrtnc_parent {
 
 File['/var/inh']{
-  ensure => 'directory',
+  #ensure => 'directory',
+  mode => '0666',
   }
 
-File['/var/parentfile']{
-  mode => '0660',
-  }
 }
