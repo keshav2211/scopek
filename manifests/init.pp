@@ -12,7 +12,7 @@ include ::scopek::resdef_calling
 include ::scopek::settingsfile
 include ::scopek::rescollector
 include ::scopek::inhrtnc_third
-include ::scopkek::inhrtnc_child
+include ::scopek::inhrtnc_child
 }
 
   
